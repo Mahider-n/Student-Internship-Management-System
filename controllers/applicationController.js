@@ -198,25 +198,3 @@ exports.getAllApplications = async (req, res) => {
     });
   }
 };
-
-
-
-// exports.changeApplicationStatus = async (req, res) => {
-//   try {
-//     const { status } = req.body;
-//     const applicationId = req.params.id;
-
-//     const validStatuses = ["pending", "accepted", "rejected"];
-//     if (!validStatuses.includes(status)) {
-//       return res.status(400).json({ error: "Invalid status value" });
-//     }
-//     if(!applicationId){
-//         return res.status(400).json({error:"application not found"})
-//     }
-
-//     await Application.updateStatus(applicationId, status);
-//     res.json({ message: "Application status updated successfully" });
-//   } catch (err) {
-//     res.status(500).json({ error: err.message });
-//   }
-// };

@@ -72,25 +72,4 @@ exports.login = async (req, res) => {
   }
 };
 
-
-  // exports.login = async (req, res) => {
-  //   try {
-  //     const user = await userModel.findUserByEmail(req.body.email);
-  //     if (!user) return res.status(401).json({ error: "Invalid credentials" });
-  
-  //     const validPassword = await bcrypt.compare(req.body.password, user.password_hash);
-  //     if (!validPassword) return res.status(401).json({ error: "Invalid credentials" });
-  
-  //     // Update last login
-  //     await userModel.updateUser(user.id, { last_login: new Date() });
-  
-  //     const { password_hash, ...safeUser } = user;
-  //     res.json({
-  //       message: "Login successful",
-  //       user: safeUser
-  //     });
-  //   } catch (error) {
-  //     res.status(500).json({ error: error.message });
-  //   }
-  // };
   

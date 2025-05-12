@@ -70,13 +70,4 @@ module.exports = {
     });
   },
 
-  // deleteUser: (id) => {
-  //   return new Promise((resolve, reject) => {
-  //     console.log("Deleting user with ID:", id);
-  //     db.query("DELETE FROM `users` WHERE id = ?", [id], (err, results) => {
-  //       if (err) reject(err);
-  //       resolve(results);
-  //     });
-  //   });
-  // }
 };
